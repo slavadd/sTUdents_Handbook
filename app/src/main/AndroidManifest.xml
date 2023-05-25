@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM"/>
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher2"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TimeTableNew.NoActionBar"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/my_map_api_key" />
+
+        <activity
+            android:name=".MapsActivity"
+            android:parentActivityName=".MainMenuActivity"
+            android:theme="@style/Theme.TimeTableNew"
+            android:exported="false" />
+        <activity
+            android:name=".TeachersActivity"
+            android:exported="false"
+            android:parentActivityName=".MainMenuActivity"
+            android:theme="@style/Theme.TimeTableNew" />
+        <activity
+            android:name=".searchfiles.SemesterPdfActivity"
+            android:exported="false"
+            android:parentActivityName=".MainMenuActivity"
+            android:theme="@style/Theme.TimeTableNew" />
+        <activity
+            android:name=".searchfiles.SearchSemesterFilesActivity"
+            android:exported="false"
+            android:parentActivityName=".MainMenuActivity"
+            android:theme="@style/Theme.TimeTableNew" />
+        <activity
+            android:name=".searchfiles.SessionHtmlActivity"
+            android:exported="false"
+            android:parentActivityName=".MainMenuActivity"
+            android:theme="@style/Theme.TimeTableNew" />
+        <activity
+            android:name=".searchfiles.SearchSessionFilesActivity"
+            android:exported="false"
+            android:parentActivityName=".MainMenuActivity"
+            android:theme="@style/Theme.TimeTableNew" />
+        <activity
+            android:name=".SettingActivity"
+            android:exported="false"
+            android:parentActivityName=".MainMenuActivity"
+            android:theme="@style/Theme.TimeTableNew" />
+        <activity
+            android:name=".TestActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainMenuActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity
+            android:name=".authentication.EditProfileActivity"
+            android:exported="false"
+            android:parentActivityName=".MainMenuActivity"
+            android:theme="@style/Theme.TimeTableNew" />
+        <activity
+            android:name=".authentication.ProfileActivity"
+            android:exported="false"
+            android:parentActivityName=".MainMenuActivity"
+            android:theme="@style/Theme.TimeTableNew" />
+        <activity
+            android:name=".authentication.RegisterActivity"
+            android:noHistory="true"
+            android:exported="false" />
+        <activity
+            android:name=".authentication.LoginActivity"
+            android:launchMode="singleInstance"
+            android:noHistory="true"
+            android:exported="true">
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+        </activity>
+        <activity
+            android:name=".ExamsActivity"
+            android:exported="false"
+            android:label="@string/exams"
+            android:parentActivityName=".MainMenuActivity"
+            android:theme="@style/Theme.TimeTableNew" /> <!-- android:parentActivityName=".MainActivity" -->
+        <activity
+            android:name=".SettingsActivity"
+            android:exported="false"
+            android:parentActivityName=".MainMenuActivity"
+            android:theme="@style/Theme.TimeTableNew" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/weekly_plan"
+            android:parentActivityName=".MainMenuActivity"
+            android:theme="@style/Theme.TimeTableNew">
+
+<!--             <intent-filter>-->
+<!--             <action android:name="android.intent.action.MAIN" />-->
+
+<!--             <category android:name="android.intent.category.LAUNCHER" />-->
+<!--             </intent-filter>-->
+        </activity>
+
+        <receiver android:name=".AlarmBroadcastReceiver"
+            android:enabled="true">
+        </receiver>
+
+        <receiver
+            android:name=".utils.DailyReceiver"
+            android:enabled="true" />
+
+        <receiver
+            android:name=".utils.WakeUpAlarmReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+            </intent-filter>
+        </receiver>
+
+
+    </application>
+
+</manifest>

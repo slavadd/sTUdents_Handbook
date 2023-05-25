@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group
+        android:id="@+id/menu_top"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/round_home_24"
+            android:title="@string/menu_home" />
+
+    </group>
+
+    <!--    <item android:title="@string/personalize">-->
+    <!--        <menu>-->
+    <!--            <group-->
+    <!--                android:id="@+id/menu_middle"-->
+    <!--                android:checkableBehavior="single">-->
+
+    <!--                <item-->
+    <!--                    android:id="@+id/nav_timetable"-->
+    <!--                    android:icon="@drawable/baseline_calendar_month_24"-->
+    <!--                    android:title="@string/timetable" />-->
+    <!--                <item-->
+    <!--                    android:id="@+id/nav_exams"-->
+    <!--                    android:icon="@drawable/baseline_school_24"-->
+    <!--                    android:title="@string/exams" />-->
+
+    <!--                <item-->
+    <!--                    android:id="@+id/nav_teachers"-->
+    <!--                    android:icon="@drawable/baseline_person_pin_24"-->
+    <!--                    android:title="@string/teachers" />-->
+
+    <!--                <item-->
+    <!--                    android:id="@+id/nav_notes"-->
+    <!--                    android:icon="@drawable/round_note_24"-->
+    <!--                    android:title="@string/notes" />-->
+
+    <!--            </group>-->
+    <!--        </menu>-->
+    <!--    </item>-->
+
+
+    <item android:title="@string/search">
+        <menu>
+            <group
+                android:id="@+id/menu_tu_site"
+                android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/nav_semester"
+                    android:icon="@drawable/baseline_search_24"
+                    android:title="@string/search_for_semester" />
+                <item
+                    android:id="@+id/nav_session"
+                    android:icon="@drawable/baseline_content_paste_search_24"
+                    android:title="@string/search_for_session" />
+            </group>
+
+        </menu>
+    </item>
+
+
+    <item android:title="@string/websites">
+        <menu>
+            <group
+
+                android:id="@+id/menu_web"
+                android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_cse_moodle"
+                    android:icon="@drawable/baseline_school_24"
+                    android:title="@string/cse_moodle" />
+
+                <item
+                    android:id="@+id/nav_fcst_moodle"
+                    android:icon="@drawable/baseline_school_24"
+                    android:title="@string/fcst_moodle" />
+
+                <item
+                    android:id="@+id/nav_tu_mail"
+                    android:icon="@drawable/baseline_school_24"
+                    android:title="@string/tu_mail" />
+
+                <item
+                    android:id="@+id/nav_uiss"
+                    android:icon="@drawable/baseline_school_24"
+                    android:title="@string/uiss" />
+
+                <item
+                    android:id="@+id/nav_etus"
+                    android:icon="@drawable/baseline_school_24"
+                    android:title="@string/etus" />
+
+                <item
+                    android:id="@+id/nav_sport_site"
+                    android:icon="@drawable/baseline_school_24"
+                    android:title="@string/sign_up_for_sport" />
+            </group>
+
+        </menu>
+    </item>
+
+    <group
+        android:id="@+id/menu_settings"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/round_settings_24"
+            android:title="@string/action_settings" />
+    </group>
+</menu>

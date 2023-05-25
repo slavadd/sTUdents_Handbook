@@ -1,0 +1,241 @@
+<resources>
+    <string name="my_map_api_key" translatable="false">AIzaSyBcy9fm2oNCrwm1VmsEVCOjxHcoGT-Ki3s</string>
+    <string name="app_name">sTUdent\'s Handbook</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <!--    Default-->
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+
+    <!-- Fragments strings -->
+    <string name="monday">Monday</string>
+    <string name="tuesday">Tuesday</string>
+    <string name="wednesday">Wednesday</string>
+    <string name="thursday">Thursday</string>
+    <string name="friday">Friday</string>
+    <string name="saturday">Saturday</string>
+    <string name="sunday">Sunday</string>
+    <string name="select_snackbar">Please, select one item.</string>
+    <string name="selected">Selected</string>
+
+    <!-- Main Activity strings -->
+    <string name="timetable">TimeTable</string>
+    <string name="seven_days_of_the_week">7 Days of the Week</string>
+    <string name="subject">Subject</string>
+    <string name="field_error">field can not be empty!</string>
+    <string name="time_error">Time field can not be empty!</string>
+    <string name="week">Week</string>
+    <string name="delete">Delete</string>
+    <string name="edit">Edit</string>
+    <string name="school_website">School website</string>
+    <string name="school_website_snackbar">Please, set URL of your school website in settings.</string>
+    <string name="change_language">Change language</string>
+
+    <!--    Weekly plan-->
+    <string name="add_subject">Add subject</string>
+    <string name="edit_subject">Edit subject</string>
+    <string name="teacher">Teacher</string>
+    <string name="room">Room</string>
+    <string name="time">Time</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="time_to_dialog">To:</string>
+    <string name="time_from_dialog">From:</string>
+    <string name="subject_dialog">Subject:</string>
+    <string name="teacher_dialog">Teacher:</string>
+    <string name="room_dialog">Room:</string>
+    <string name="select_time">Select time</string>
+    <string name="from_time">From Time</string>
+    <string name="to_time">To Time</string>
+    <string name="select_color">Select color</string>
+    <string name="choose_time">Choose time</string>
+    <string name="choose_date">Choose date</string>
+    <string name="choose_color">Choose color</string>
+    <string name="subject_type">Type:</string>
+    <string name="subject_frequency">Frequency:</string>
+    <string name="lecture">Lecture</string>
+    <string name="every_week">Every week</string>
+    <string name="exam_type">Exam</string>
+
+    <!-- Homeworks Activity strings -->
+    <string name="title_activity_homeworks">HomeworksActivity</string>
+    <string name="homeworks">Homeworks</string>
+    <string name="select_date">Select date</string>
+    <string name="deadline_dialog">Deadline:</string>
+    <string name="deadline">Deadline</string>
+    <string name="description_dialog">Description:</string>
+    <string name="desctiption">Desctiption</string>
+    <string name="date_error">Date field can not be empty!</string>
+    <string name="edit_homework">Edit homework</string>
+    <string name="add_homework">Add homework</string>
+    <string name="deadline_snackbar">"Deadline field can not be empty!</string>
+    <string name="date">Date</string>
+
+    <!-- Notes Activity strings -->
+    <string name="notes">Notes</string>
+    <string name="title_dialog">Title:</string>
+    <string name="add_note">Add note</string>
+    <string name="edit_note">Edit note</string>
+    <string name="title_error">Title field can not be empty!</string>
+    <string name="title">Title</string>
+    <string name="saved">Saved</string>
+
+    <!-- Teachers Activity strings -->
+    <string name="teachers">Teachers</string>
+    <string name="add_teacher">Add teacher</string>
+    <string name="edit_teacher">Edit teacher</string>
+    <string name="name_dialog">Name:</string>
+    <string name="post_dialog">Post:</string>
+    <string name="phonenumber_dialog">Phone:</string>
+    <string name="email_dialog">Email:</string>
+    <string name="name">Name</string>
+    <string name="phone_number">Phone number</string>
+    <string name="post">Post</string>
+    <string name="email">Email</string>
+    <string name="office">Office</string>
+    <string name="office_dialog">Office:</string>
+
+    <!-- Exams Activity strings -->
+    <string name="exams">Exams</string>
+    <string name="add_exam">Add exam</string>
+    <string name="edit_exam">Edit exam</string>
+    <string name="date_dialog">Date:</string>
+    <string name="time_dialog">Time:</string>
+
+    <!-- Settings Activity strings -->
+    <string name="sevendays_setting">Enable 7 Days of the Week</string>
+    <string name="school_website_setting">Change school website</string>
+    <string name="school_website_setting_summary">Change URL of your school website</string>
+
+    <!-- Notification -->
+    <string name="notification_title">Today\'s lessons</string>
+    <string name="do_not_have_lessons">You do not have lessons!</string>
+
+    <!--    Login and Registration-->
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="register">Register</string>
+    <string name="click_to_login">Click to Login</string>
+    <string name="click_to_register">Click to Register</string>
+    <string name="logout">Logout</string>
+    <string name="don_t_have_an_account">Don\'t have an account?</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="enter_your_email_address">Enter your email address:</string>
+    <string name="reset">Reset</string>
+    <string name="full_name">Full name</string>
+    <string name="specialty">Specialty</string>
+    <string name="profile_information">Profile Information</string>
+    <string name="account_settings">Account Settings</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="edit_profile_information">Edit Profile Information</string>
+
+    <!--Navigation menu options-->
+    <string name="cse_moodle">CSE Moodle</string>
+    <string name="fcst_moodle">FCST Moodle</string>
+    <string name="tu_mail">TU Mail</string>
+    <string name="uiss">UISS</string>
+    <string name="etus">ETUS</string>
+    <string name="sign_up_for_sport">Sign up for sport</string>
+    <string name="search_for_session">Search session schedule</string>
+    <string name="search_for_semester">Search semester schedule</string>
+    <string name="search_semester_files">Search schedule for semester</string>
+    <string name="search_session_files">Search schedule for session</string>
+
+    <!--    Options-->
+    <string name="personalize">Personalize</string>
+    <string name="websites">Websites</string>
+    <string name="search">Search</string>
+    <string name="student_s_handbook">sTUdent\'s Handbook</string>
+    <string name="helping_you_in_tu">Helping you in TU</string>
+    <string name="weekly_plan">Weekly plan</string>
+    <string name="profile">Profile</string>
+    <string name="settings">Settings</string>
+
+    <!--Search for semester and session-->
+    <string name="fkst_meaning">Faculty of "Computer Systems and Technologies"</string>
+    <string name="session_exams">Examination Sessions</string>
+    <string name="choose_specialty">Choose specialty</string>
+    <string name="choose_course">Choose course</string>
+    <string name="choose_flow">Choose flow</string>
+    <string name="weekly_schedule">Weekly Schedule</string>
+    <string name="guide_weekly_schedule">Guidelines for Weekly Schedules:</string>
+    <string name="guide_ws_acronyms_l">"l." – lecture</string>
+    <string name="guide_ws_acronyms_su">"s.u." – seminar exercise</string>
+    <string name="guide_ws_acronyms_lu">"l.u." – laboratory exercise"</string>
+    <string name="guide_ws_horizontal_line">Horizontal line - divides the group into two subgroups</string>
+    <string name="guide_ws_diagonal_line">Diagonal line: above the line - odd week; below the line-even week"</string>
+    <string name="dash" translatable="false">-</string>
+    <string name="specialty_ksi">CSE</string>
+    <string name="specialty_iti">ITI</string>
+    <string name="specialty_cybersecurity">Cybersecurity</string>
+    <string name="specialty_kn">CS (E)</string>
+    <string name="specialty_kni">CSE (E)</string>
+    <string name="course">Course</string>
+    <string name="flow">Flow</string>
+
+    <!--    Settings-->
+    <string name="application_settings">Application Settings</string>
+    <string name="personalize_the_application">Personalize the application</string>
+    <string name="select_a_preferred_language_for_the_app">Select a preferred language for the app</string>
+    <string name="bulgarian">Bulgarian</string>
+    <string name="english">English</string>
+    <string name="enable_disable_dark_mode">Choose whether you want to enable or disable Dark mode</string>
+    <string name="dark_mode">Dark Mode</string>
+    <string name="maps">Maps</string>
+    <string name="info">Info</string>
+    <string name="no_internet_connection">No Internet connection</string>
+
+
+    <!--    Maps-->
+    <string name="first_block">First Block</string>
+    <string name="second_block">Second Block</string>
+    <string name="third_block">Third Block</string>
+    <string name="forth_block">Forth Block</string>
+    <string name="seventh_block">Seventh Block</string>
+    <string name="eighth_block">Eighth Block</string>
+    <string name="ninth_block">Ninth Block</string>
+    <string name="tenth_block">Tenth Block</string>
+    <string name="eleventh_block">Eleventh Block</string>
+    <string name="twelfth_block">Twelfth Block</string>
+    <string name="thirteenth_block">Thirteenth Block</string>
+    <string name="sport_center">Sport Center</string>
+
+    <!--    Setting-->
+    <string name="language_set_to_english">Language set to English</string>
+    <string name="enable_dark_mode">Enable Dark Mode</string>
+    <string name="disable_dark_mode">Disable Dark Mode</string>
+    <string name="language_set_to_bulgarian">Language set to Bulgarian</string>
+
+    <!--    Notification-->
+    <string name="look_at_daily_plan">Look at your daily plan</string>
+    <string name="open_app_to_see_schedule">Open the app to see what\'s on schedule for today</string>
+    <string name="enable_daily_notifications">Choose if you want to enable daily notifications</string>
+    <string name="enable_notifications">Enable notifications</string>
+
+    <!--    Onboard notifications-->
+    <string name="welcome_to_tu_sports_site">Welcome to the TU Sports Site</string>
+    <string name="here_you_can_sign_for_sport">Here you can sign up for sport</string>
+    <string name="OK">OK</string>
+    <string name="welcome_to_cse_moodle_site">Welcome to the CSE Moodle Site</string>
+    <string name="this_is_cse_moodle">This is the moodle for Department of "Computer Systems"</string>
+    <string name="welcome_to_fcst_moodle_site">Welcome to the FCST Moodle Site</string>
+    <string name="this_is_fcst_moodle">This is the moodle for Faculty of Computer Systems and Technologies</string>
+    <string name="welcome_to_etus_site">Welcome to the ETUS Site</string>
+    <string name="this_is_etus_site">This is the site for Electronic certification of the semester</string>
+    <string name="welcome_to_uiss_site">Welcome to the UISS Site</string>
+    <string name="this_is_uiss_site">This is the site for University Information System - Student</string>
+    <string name="welcome_to_tu_mail">Welcome to the TU Mail</string>
+    <string name="this_is_tu_mail">This is the site for web mail for TU students</string>
+
+
+
+</resources>

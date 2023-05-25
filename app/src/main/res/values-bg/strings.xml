@@ -1,0 +1,236 @@
+<resources>
+    <string name="app_name">Наръчник на сТУдента</string>
+    <string name="navigation_drawer_open">Отвори навигационен прозорец</string>
+    <string name="navigation_drawer_close">Затвори навигационен прозорец</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Навигационен хедър</string>
+    <string name="action_settings">Настройки</string>
+
+    <string name="menu_home">Начало</string>
+    <string name="menu_gallery">Галерия</string>
+    <string name="menu_slideshow">Слайдшоу</string>
+
+
+    <!-- Fragments strings -->
+    <string name="monday">Понеделник</string>
+    <string name="tuesday">Вторник</string>
+    <string name="wednesday">Сряда</string>
+    <string name="thursday">Четвъртък</string>
+    <string name="friday">Петък</string>
+    <string name="saturday">Събота</string>
+    <string name="sunday">Неделя</string>
+    <string name="select_snackbar">Моля, изберете един елемент.</string>
+    <string name="selected">Избрани</string>
+
+    <!-- Main Activity strings -->
+    <string name="timetable">TimeTable</string>
+    <string name="seven_days_of_the_week">7-дневна седмица</string>
+    <string name="subject">Предмет</string>
+    <string name="field_error">Полето не може да бъде празно!</string>
+    <string name="time_error">Полето за време не може да бъде празно!</string>
+    <string name="week">Седмица</string>
+    <string name="delete">Изтрий</string>
+    <string name="edit">Редактирай</string>
+    <string name="school_website">Училищен уебсайт</string>
+    <string name="school_website_snackbar">Please, set URL of your school website in settings.</string>
+    <string name="change_language">Смени езика</string>
+
+
+    <string name="add_subject">Добави предмет</string>
+    <string name="edit_subject">Редактирай предмет</string>
+    <string name="teacher">Учител</string>
+    <string name="room">Стая</string>
+    <string name="time">Време</string>
+    <string name="save">Запази</string>
+    <string name="cancel">Отмени</string>
+    <string name="time_to_dialog">До:</string>
+    <string name="time_from_dialog">От:</string>
+    <string name="subject_dialog">Предмет:</string>
+    <string name="teacher_dialog">Учител:</string>
+    <string name="room_dialog">Стая:</string>
+    <string name="select_time">Избери време</string>
+    <string name="from_time">Начален час</string>
+    <string name="to_time">Краен час</string>
+    <string name="select_color">Избери цвят</string>
+    <string name="choose_time">Избери време</string>
+    <string name="choose_date">Избери дата</string>
+    <string name="choose_color">Избери цвят</string>
+    <string name="subject_type">Тип:</string>
+    <string name="subject_frequency">Честота:</string>
+    <string name="lecture">Лекция</string>
+    <string name="every_week">Всяка седмица</string>
+    <string name="exam_type">Изпит</string>
+
+    <!-- Homeworks Activity strings -->
+    <string name="title_activity_homeworks">HomeworksActivity</string>
+    <string name="homeworks">Homeworks</string>
+    <string name="select_date">Select date</string>
+    <string name="deadline_dialog">Deadline:</string>
+    <string name="deadline">Deadline</string>
+    <string name="description_dialog">Description:</string>
+    <string name="desctiption">Desctiption</string>
+    <string name="date_error">Date field can not be empty!</string>
+    <string name="edit_homework">Edit homework</string>
+    <string name="add_homework">Add homework</string>
+    <string name="deadline_snackbar">"Deadline field can not be empty!</string>
+    <string name="date">Date</string>
+
+    <!-- Notes Activity strings -->
+    <string name="notes">Notes</string>
+    <string name="title_dialog">Title:</string>
+    <string name="add_note">Add note</string>
+    <string name="edit_note">Edit note</string>
+    <string name="title_error">Title field can not be empty!</string>
+    <string name="title">Title</string>
+    <string name="saved">Saved</string>
+
+    <!-- Teachers Activity strings -->
+    <string name="teachers">Учители</string>
+    <string name="add_teacher">Добави учител</string>
+    <string name="edit_teacher">Редактирай учител</string>
+    <string name="name_dialog">Изме:</string>
+    <string name="post_dialog">Длъжност:</string>
+    <string name="phonenumber_dialog">Телефон:</string>
+    <string name="email_dialog">Email:</string>
+    <string name="name">Име</string>
+    <string name="phone_number">Телефонен номер</string>
+    <string name="post">Длъжност</string>
+    <string name="email">Email</string>
+    <string name="office">Кабинет</string>
+    <string name="office_dialog">Кабинет:</string>
+
+    <!-- Exams Activity strings -->
+    <string name="exams">Изпити</string>
+    <string name="add_exam">Добави изпит</string>
+    <string name="edit_exam">Редактирай изпит</string>
+    <string name="date_dialog">Дата:</string>
+    <string name="time_dialog">Време:</string>
+
+    <!-- Settings Activity strings -->
+    <string name="sevendays_setting">Enable 7 Days of the Week</string>
+    <string name="school_website_setting">Change school website</string>
+    <string name="school_website_setting_summary">Change URL of your school website</string>
+
+    <!-- Notification -->
+    <string name="notification_title">Today\'s lessons</string>
+    <string name="do_not_have_lessons">You do not have lessons!</string>
+
+    <!--    Login & Register-->
+    <string name="login">Вход</string>
+    <string name="password">Парола</string>
+    <string name="register">Регистрация</string>
+    <string name="click_to_login">Натисни за вход</string>
+    <string name="click_to_register">Натисни за регистрация</string>
+    <string name="logout">Изход</string>
+    <string name="don_t_have_an_account">Нямаш акаунт?</string>
+    <string name="already_have_an_account">Вече имаш акаунт?</string>
+    <string name="confirm_password">Потвърди парола</string>
+    <string name="forgot_password">Забравена парола</string>
+    <string name="enter_your_email_address">Въведи твоя email адрес:</string>
+    <string name="reset">Нулиране</string>
+    <string name="full_name">Пълно име</string>
+    <string name="specialty">Специалност</string>
+    <string name="profile_information">Информация за профила</string>
+    <string name="account_settings">Настройки на акаунта</string>
+    <string name="edit_profile">Редактирай профил</string>
+    <string name="edit_profile_information">Редактирай информацията на профила</string>
+
+    <!--Navigation menu options-->
+    <string name="cse_moodle">КСИ Мудъл</string>
+    <string name="fcst_moodle">ФКСТ Мудyл</string>
+    <string name="tu_mail">ТУ Мейл</string>
+    <string name="uiss">УИСС</string>
+    <string name="etus">ЕТУС</string>
+    <string name="sign_up_for_sport">Запиши се за спорт</string>
+    <string name="search_for_session">График за сесия</string>
+    <string name="search_for_semester">График за семестър</string>
+    <string name="search_semester_files">Търси график за семестър</string>
+    <string name="search_session_files">Търси график за сесия</string>
+
+    <!--    Options-->
+    <string name="personalize">Персонализирай</string>
+    <string name="websites">Уебсайтове</string>
+    <string name="search">Търси</string>
+    <string name="student_s_handbook">Наръчник на сТУдента</string>
+    <string name="helping_you_in_tu">Помощникът ти в ТУ</string>
+    <string name="weekly_plan">Разписание</string>
+    <string name="profile">Профил</string>
+    <string name="settings">Настройки</string>
+
+    <!--Search for semester and session-->
+    <string name="fkst_meaning">Факултет Компютърни системи и технологии</string>
+    <string name="session_exams">Изпитни сесии</string>
+    <string name="choose_specialty">Избери специалност</string>
+    <string name="choose_course">Избери курс</string>
+    <string name="choose_flow">Избери поток</string>
+    <string name="weekly_schedule">Седмичен разпис</string>
+    <string name="guide_weekly_schedule">Указания за седмичните разписи:</string>
+    <string name="guide_ws_acronyms_l">„л.” – лекция</string>
+    <string name="guide_ws_acronyms_su">„с.у.” – семинарно упражнение</string>
+    <string name="guide_ws_acronyms_lu">„л.у.” – лабораторно упражнение</string>
+    <string name="guide_ws_horizontal_line">Хоризонтална линия - разделя групата на две подгрупи</string>
+    <string name="guide_ws_diagonal_line">Диагонална линия: над линията - нечетна седмица; под линията-четна седмица"</string>
+    <string name="specialty_ksi">КСИ</string>
+    <string name="specialty_iti">ИТИ</string>
+    <string name="specialty_kn">КН (АЕ)</string>
+    <string name="specialty_kni">КНИ (АЕ)</string>
+    <string name="specialty_cybersecurity">Киберсигурност</string>
+    <string name="course">Курс</string>
+    <string name="flow">Поток</string>
+
+    <!--    Settings-->
+    <string name="application_settings">Настройки на приложението</string>
+    <string name="personalize_the_application">Персонализирай приложението</string>
+    <string name="select_a_preferred_language_for_the_app">Изберете предпочитан език за приложението</string>
+    <string name="bulgarian">Български</string>
+    <string name="english">Английски</string>
+    <string name="enable_disable_dark_mode">Изберете дали искате да активирате или деактивирате Тъмния режим</string>
+    <string name="dark_mode">Тъмен режим</string>
+    <string name="maps">Карти</string>
+    <string name="info">Информация</string>
+    <string name="no_internet_connection">No Internet connection</string>
+
+    <!--    Maps-->
+    <string name="first_block">Първи Блок</string>
+    <string name="second_block">Втори Блок</string>
+    <string name="third_block">Трети Блок</string>
+    <string name="forth_block">Четвърти Блок</string>
+    <string name="seventh_block">Седми Блок</string>
+    <string name="eighth_block">Осми Блок</string>
+    <string name="ninth_block">Девети Блок</string>
+    <string name="tenth_block">Десети Блок</string>
+    <string name="eleventh_block">Eleventh Block</string>
+    <string name="twelfth_block">Единадесети блок</string>
+    <string name="thirteenth_block">Тринадесети блок</string>
+    <string name="sport_center">Спортен Център</string>
+
+    <!--    Setting-->
+    <string name="language_set_to_english">Зададен език е английски</string>
+    <string name="enable_dark_mode">Активиране на тъмен режим</string>
+    <string name="disable_dark_mode">Деактивиране на тъмен режим</string>
+    <string name="language_set_to_bulgarian">Зададен език е български</string>
+
+    <!--    Notification-->
+    <string name="look_at_daily_plan">Вижте дневния си план</string>
+    <string name="open_app_to_see_schedule">Отворете приложението, за да видите какво има по график за днес</string>
+    <string name="enable_daily_notifications">Изберете дали искате да активирате ежедневни известия</string>
+    <string name="enable_notifications">Активирайте известията</string>
+
+    <!--    Onboard notifications-->
+    <string name="welcome_to_tu_sports_site">Добре дошли в сайта за спорт на Технически Университет</string>
+    <string name="here_you_can_sign_for_sport">Тук можете да се запишете за спорт</string>
+    <string name="OK">ОК</string>
+    <string name="welcome_to_cse_moodle_site">Добре дошли в сайта на КСИ Мудъл</string>
+    <string name="this_is_cse_moodle">Това е мудълът на катедра "Компютърни системи"</string>
+    <string name="welcome_to_fcst_moodle_site">Добре дошли в сайта на ФКСТ Мудъл</string>
+    <string name="this_is_fcst_moodle">Това е мудълът на Факултета по компютърни системи и технологии</string>
+    <string name="welcome_to_etus_site">Добре дошли в сайта на ЕТУС</string>
+    <string name="this_is_etus_site">Това е сайтът за Електронна заверка на семестъра</string>
+    <string name="welcome_to_uiss_site">Добре дошли в сайта на УИСС</string>
+    <string name="this_is_uiss_site">Това е сайтът за Университетска Информационна Система - Студент</string>
+    <string name="welcome_to_tu_mail">Добре дошли в мейла на Технически Университет</string>
+    <string name="this_is_tu_mail">Това е сайтът за уеб поща на студенти от Технически Университет</string>
+
+
+</resources>

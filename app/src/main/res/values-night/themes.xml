@@ -1,0 +1,26 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.TimeTableNew" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/light_pastel_blue</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryDark</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/baby_blue</item>
+        <item name="colorSecondaryVariant">@color/teal_200</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/light_pastel_blue</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    //5B86C6
+    <color name="cardview_border">#5B86C6</color>
+    <color name="cardview_text_color">#ffffff</color>
+    <color name="cardview_background">#5B86C6</color>
+    <color name="background_base">#D0E8FB</color>
+    <color name="loginTextcolor">#ffffff</color>
+    <color name="customDrawableColor">#000000</color>
+    <color name="customTextColor">#ffffff</color>
+    <color name="colorBackgroundBox">#800B0909</color>
+</resources>

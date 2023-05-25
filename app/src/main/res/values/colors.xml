@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="grey">#888888</color>
+
+    <color name="colorPrimary">#2196F3</color>
+    <color name="colorPrimaryDark">#1976D2</color>
+    <color name="colorAccent">#03A9F4</color>
+    <color name="colorSpinner">#64cbe0</color>
+
+    <color name="purple">#6A8FEB</color>
+    <color name="blue_main">#2294F2</color>
+    <color name="cyan">#14B6DB</color>
+    <color name="light_blue">#7DDBF0</color>
+    <color name="baby_blue">#A9D3F5</color>
+    <color name="pastel_blue">#5CB6FF</color>
+    <color name="light_pastel_blue">#6FADE3</color>
+    <color name="lighter_blue">#C3E2FB</color>
+
+    <color name="dark_blue">#005AAF</color>
+    <color name="darker_blue">#003F8E</color>
+    <color name="darkest_blue">#001156</color>
+    <color name="midnight_blue">#00266F</color>
+    <color name="blue_bar">#79C2FD</color>
+
+    <string-array name="blueColors">
+        <item>#7DDBF0</item>
+        <item>#5CB6FF</item>
+        <item>#6FADE3</item>
+        <item>#A9D3F5</item>
+        <item>#C5C6C6</item>
+        <item>#BFE2FF</item>
+        <item>#5B86C6</item>
+        <item>#DEDEDE</item>
+        <item>#84ADEB</item>
+        <item>#A2D9F7</item>
+        <item>#8BB0CF</item>
+        <item>#96C2E6</item>
+        <item>#B2C2CF</item>
+        <item>#C7D9E8</item>
+        <item>#70DAF5</item>
+        <item>#8FCDFF</item>
+        <item>#B6CCDE</item>
+
+    </string-array>
+
+
+
+    <string-array name="brightColors" translatable="false">
+        <item>#99cc00</item>
+        <item>#33b5e5</item>
+        <item>#0099cc</item>
+        <item>#547bca</item>
+        <item>#aa66cc</item>
+        <item>#9933cc</item>
+        <item>#669900</item>
+        <item>#aeb857</item>
+        <item>#cc0000</item>
+        <item>#df5948</item>
+        <item>#ff4444</item>
+        <item>#ae6b23</item>
+        <item>#ff8800</item>
+        <item>#e5ae4f</item>
+        <item>#ffbb33</item>
+        <item>#cccccc</item>
+        <item>#888888</item>
+    </string-array>
+
+    <string-array name="pastelColors">
+        <item>#709bea</item>
+        <item>#998eed</item>
+        <item>#9ff995</item>
+        <item>#a48ee5</item>
+        <item>#c7c4ff</item>
+        <item>#bae8ff</item>
+        <item>#81f4cc</item>
+        <item>#f0f495</item>
+        <item>#f7bcb2</item>
+        <item>#a17af4</item>
+        <item>#86f9f0</item>
+        <item>#f9ddb6</item>
+        <item>#72ffd9</item>
+        <item>#f2a693</item>
+        <item>#9bffda</item>
+    </string-array>
+
+    <string-array name="pastelColors2">
+        <item>#c9f99f</item>
+        <item>#ef8f9e</item>
+        <item>#ddf990</item>
+        <item>#a4daf2</item>
+        <item>#6e92f4</item>
+        <item>#deb0fc</item>
+        <item>#9effe5</item>
+        <item>#84f9b3</item>
+        <item>#87f97a</item>
+        <item>#75f48e</item>
+        <item>#a1d7f4</item>
+        <item>#bdbffc</item>
+        <item>#aaffb6</item>
+        <item>#f9e3a4</item>
+        <item>#f9b3f9</item>
+    </string-array>
+
+    <string-array name="pastelColors30">
+        <item>#e4f27b</item>
+        <item>#72f975</item>
+        <item>#87f484</item>
+        <item>#b2ffcc</item>
+        <item>#fcaeab</item>
+        <item>#d8bafc</item>
+        <item>#f9c7ae</item>
+        <item>#64cbe0</item>
+        <item>#f287be</item>
+        <item>#8cff75</item>
+        <item>#8cb2f7</item>
+        <item>#f7b7af</item>
+        <item>#86e8ef</item>
+        <item>#ffc4d4</item>
+        <item>#ff96f1</item>
+        <item>#a9cdf2</item>
+        <item>#a1fca4</item>
+        <item>#f7a376</item>
+        <item>#ffaf99</item>
+        <item>#f7d0b2</item>
+        <item>#e8f779</item>
+        <item>#c29af9</item>
+        <item>#eef986</item>
+        <item>#e8fc74</item>
+        <item>#ba6de0</item>
+        <item>#c89bff</item>
+        <item>#f2c99f</item>
+        <item>#a9f995</item>
+        <item>#e3f972</item>
+        <item>#8ff7fc</item>
+    </string-array>
+</resources>

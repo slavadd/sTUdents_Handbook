@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".webviews.TuMailFragment">
+
+    <WebView
+        android:id="@+id/idWebViewMailMoodle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ProgressBar
+        android:id="@+id/idPBLoading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+
+    <TextView
+        android:id="@+id/tvNoNet"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/customDrawableColor"
+        android:gravity="center"
+        android:text="@string/no_internet_connection"
+        android:textColor="@color/customTextColor"
+        android:textSize="22sp"
+        android:visibility="gone" />
+
+</FrameLayout>
