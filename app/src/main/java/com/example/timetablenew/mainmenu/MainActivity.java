@@ -1,4 +1,4 @@
-package com.example.timetablenew;
+package com.example.timetablenew.mainmenu;
 
 import android.app.Activity;
 import android.app.AlarmManager;
@@ -9,11 +9,12 @@ import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.Menu;
 import android.widget.Button;
 
+import com.example.timetablenew.R;
+import com.example.timetablenew.options.SettingsActivity;
 import com.example.timetablenew.adapters.FragmentsTabAdapter;
 import com.example.timetablenew.authentication.LoginActivity;
 import com.example.timetablenew.fragments.FridayFragment;
@@ -25,16 +26,8 @@ import com.example.timetablenew.fragments.TuesdayFragment;
 import com.example.timetablenew.fragments.WednesdayFragment;
 import com.example.timetablenew.utils.AlertDialogsHelper;
 import com.example.timetablenew.utils.DailyReceiver;
-import com.google.android.material.navigation.NavigationView;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.ActionBarDrawerToggle;
-import androidx.appcompat.widget.Toolbar;
-import androidx.core.view.GravityCompat;
-import androidx.navigation.NavController;
-import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
-import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 //import android.support.v7.widget.Toolbar;
@@ -166,12 +159,7 @@ public class MainActivity extends AppCompatActivity  {
     @Override
     public void onBackPressed() {
         super.onBackPressed();
-//        DrawerLayout drawer = findViewById(R.id.drawer_layout);
-//        if (drawer.isDrawerOpen(GravityCompat.START)) {
-//            drawer.closeDrawer(GravityCompat.START);
-//        } else {
-//            super.onBackPressed();
-//        }
+
     }
 
     @Override
@@ -179,18 +167,6 @@ public class MainActivity extends AppCompatActivity  {
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
     }
-
-//    @Override
-//    public boolean onOptionsItemSelected(MenuItem item) {
-//        switch (item.getItemId()) {
-//            case R.id.action_settings:
-//                Intent settings = new Intent(MainActivity.this, SettingActivity.class);
-//                startActivity(settings);
-//                return true;
-//            default:
-//                return super.onOptionsItemSelected(item);
-//        }
-//    }
 
     @Override
     protected void onPause() {

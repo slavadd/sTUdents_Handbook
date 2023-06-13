@@ -1,4 +1,4 @@
-package com.example.timetablenew;
+package com.example.timetablenew.maps;
 
 import androidx.fragment.app.FragmentActivity;
 
@@ -7,8 +7,7 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 
-import com.example.timetablenew.searchfiles.SearchSemesterFilesActivity;
-import com.example.timetablenew.searchfiles.SemesterPdfActivity;
+import com.example.timetablenew.R;
 import com.google.android.gms.maps.CameraUpdate;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -32,7 +31,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
         fabInfo = findViewById(R.id.fabInfo);
 
-        //link
         //https://www.tu-sofia.bg/kcfinder-master/upload/%D0%A4%D0%90/files/map%20campus.pdf
 
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
@@ -43,12 +41,16 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         fabInfo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String viewerUrl = "https://docs.google.com/viewer?url=";
-                String pdfViewerURL = "https://drive.google.com/viewerng/viewer?embedded=true&url=";
-                String urlView= "https://docs.google.com/viewerng/viewer?url=";
-                SemesterPdfActivity.setChangeUrl(urlView + value);
-                Intent intent = new Intent(MapsActivity.this, SemesterPdfActivity.class);
+                //second option
+                Intent intent = new Intent(MapsActivity.this, CampusActivity.class);
                 startActivity(intent);
+
+//                String viewerUrl = "https://docs.google.com/viewer?url=";
+//                String pdfViewerURL = "https://drive.google.com/viewerng/viewer?embedded=true&url=";
+//                String urlView= "https://docs.google.com/viewerng/viewer?url=";
+//                SemesterPdfActivity.setChangeUrl(urlView + value);
+//                Intent intent = new Intent(MapsActivity.this, SemesterPdfActivity.class);
+//                startActivity(intent);
             }
         });
 

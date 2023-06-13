@@ -155,7 +155,7 @@
     <string name="websites">Websites</string>
     <string name="search">Search</string>
     <string name="student_s_handbook">sTUdent\'s Handbook</string>
-    <string name="helping_you_in_tu">Helping you in TU</string>
+    <string name="helping_you_in_tu">Your helper in TU</string>
     <string name="weekly_plan">Weekly plan</string>
     <string name="profile">Profile</string>
     <string name="settings">Settings</string>
@@ -208,12 +208,17 @@
     <string name="twelfth_block">Twelfth Block</string>
     <string name="thirteenth_block">Thirteenth Block</string>
     <string name="sport_center">Sport Center</string>
+    <string name="campus_map">Campus Map</string>
+    <string name="rotate">Rotate</string>
 
     <!--    Setting-->
     <string name="language_set_to_english">Language set to English</string>
     <string name="enable_dark_mode">Enable Dark Mode</string>
     <string name="disable_dark_mode">Disable Dark Mode</string>
     <string name="language_set_to_bulgarian">Language set to Bulgarian</string>
+    <string name="share_your_impressions">Please, share your impressions of the app</string>
+    <string name="give_feedback">Give Feedback</string>
+    <string name="enabled_notifications">Enabled Notifications</string>
 
     <!--    Notification-->
     <string name="look_at_daily_plan">Look at your daily plan</string>
@@ -236,6 +241,18 @@
     <string name="welcome_to_tu_mail">Welcome to the TU Mail</string>
     <string name="this_is_tu_mail">This is the site for web mail for TU students</string>
 
+    <!--   Academic calendar-->
+    <string name="academic_calendar">Academic calendar</string>
+    <string name="educational_process">Educational Process</string>
+    <string name="early_liquidation_session">Annual examination liquidation session for the past academic year</string>
+    <string name="winter_semester">Classes for the winter semester</string>
+    <string name="christmas_holiday">Christmas holidays</string>
+    <string name="winter_session">Winter examination session</string>
+    <string name="winter_retake_session">Winter retake session</string>
+    <string name="summer_semester">Classes for the summer semester</string>
+    <string name="easter_holiday">Easter holidays</string>
+    <string name="summer_session">Summer examination session</string>
+    <string name="summer_retake_session">Annual retake session</string>
 
 
 </resources>

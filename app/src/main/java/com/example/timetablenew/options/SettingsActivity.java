@@ -1,4 +1,4 @@
-package com.example.timetablenew;
+package com.example.timetablenew.options;
 
 import android.app.Activity;
 import android.content.res.Configuration;
@@ -7,6 +7,7 @@ import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.timetablenew.R;
 import com.example.timetablenew.fragments.SettingsFragment;
 
 import java.util.Locale;

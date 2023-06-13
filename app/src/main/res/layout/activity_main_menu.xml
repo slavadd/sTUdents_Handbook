@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context=".MainMenuActivity"
+    tools:context=".mainmenu.MainMenuActivity"
     tools:openDrawer="start">
 
 
@@ -72,7 +72,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
-                    android:layout_marginTop="24dp"
+                    android:layout_marginTop="20dp"
                     android:text="@string/student_s_handbook"
                     android:textColor="@color/dark_blue"
                     android:textSize="34sp"
@@ -86,7 +86,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
-                    android:layout_marginTop="20dp"
+                    android:layout_marginTop="16dp"
                     android:text="@string/helping_you_in_tu"
                     android:textColor="@color/colorPrimaryDark"
                     android:textSize="20sp"

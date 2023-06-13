@@ -41,7 +41,7 @@ public class EditProfileActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_edit_profile);
 
-        editName = findViewById(R.id.tv_profile_edit_name);
+        editName = findViewById(R.id.liquidationString);
         editSpecialty = findViewById(R.id.tv_profile_edit_specialty);
         editEmail = findViewById(R.id.tv_profile_edit_email);
         pbLoad = findViewById(R.id.pbLoadEdit);

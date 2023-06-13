@@ -215,10 +215,14 @@ public class SearchSemesterFilesActivity extends AppCompatActivity {
 //            Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(value));
 //            startActivity(intent);
 
-        //another way
+        //with preview
 //      MainActivity2.setChangeUrl("https://docs.google.com/viewerng/viewer?url=http://tu-sofia.bg/weeklyprogram/2022-2023-leten/bakalavar/%D0%A4%D0%9A%D0%A1%D0%A2-%D0%98%D0%A2%D0%98-1-10-09-03-2023-14-06.pdf");
 //      https://docs.google.com/viewerng/viewer?url=http://yourfile.pdf
     }
 
+    @Override
+    public void onBackPressed() {
+
+    }
 
 }

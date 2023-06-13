@@ -1,4 +1,4 @@
-package com.example.timetablenew;
+package com.example.timetablenew.utils;
 
 import android.app.Notification;
 import android.app.NotificationChannel;
@@ -12,12 +12,14 @@ import android.os.Bundle;
 
 import androidx.core.app.NotificationCompat;
 
+import com.example.timetablenew.mainmenu.MainActivity;
+import com.example.timetablenew.R;
+
 public class AlarmBroadcastReceiver extends BroadcastReceiver {
 
     @Override
     public void onReceive(Context context, Intent intent) {
         showNotification(context);
-
     }
 
     void showNotification(Context context) {

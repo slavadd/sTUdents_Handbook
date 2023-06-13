@@ -5,9 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background_transparent"
-    tools:context=".SettingActivity">
+    tools:context=".options.SettingActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_settings"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingBottom="10dp">
@@ -55,7 +56,7 @@
                 android:padding="8dp">
 
                 <TextView
-                    android:id="@+id/edit_profile_info"
+                    android:id="@+id/title_edu_process"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
@@ -86,7 +87,7 @@
             android:padding="8dp">
 
             <TextView
-                android:id="@+id/tv_profile_edit_name"
+                android:id="@+id/liquidationString"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -224,58 +225,43 @@
             android:background="@color/colorPrimary"
             android:padding="8dp" />
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/tv_feedback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/share_your_impressions"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/btnFeedback"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/button_background"
+                android:padding="8dp"
+                android:text="@string/give_feedback"
+                android:textAllCaps="true"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
 
     </LinearLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <!--    <Button-->
-    <!--        android:id="@+id/btnDarkMode"-->
-    <!--        android:layout_width="wrap_content"-->
-    <!--        android:layout_height="wrap_content"-->
-    <!--        android:layout_marginStart="161dp"-->
-    <!--        android:layout_marginTop="341dp"-->
-    <!--        android:layout_marginEnd="162dp"-->
-    <!--        android:layout_marginBottom="342dp"-->
-    <!--        android:textColor="@color/white"-->
-    <!--        android:text="button"-->
-    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
-    <!--        app:layout_constraintEnd_toEndOf="parent"-->
-    <!--        app:layout_constraintStart_toStartOf="parent"-->
-    <!--        app:layout_constraintTop_toTopOf="parent"/>-->
-
-    <!--    <Button-->
-    <!--        android:id="@+id/btnLanguageBg"-->
-    <!--        android:layout_width="wrap_content"-->
-    <!--        android:layout_height="wrap_content"-->
-    <!--        android:layout_marginStart="161dp"-->
-    <!--        android:layout_marginTop="21dp"-->
-    <!--        android:layout_marginEnd="122dp"-->
-    <!--        android:layout_marginBottom="342dp"-->
-    <!--        android:text="bg language"-->
-    <!--        android:textColor="@color/white"-->
-    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
-    <!--        app:layout_constraintEnd_toEndOf="parent"-->
-    <!--        app:layout_constraintHorizontal_bias="0.0"-->
-    <!--        app:layout_constraintStart_toStartOf="parent"-->
-    <!--        app:layout_constraintTop_toTopOf="parent"-->
-    <!--        app:layout_constraintVertical_bias="1.0" />-->
-
-    <!--    <Button-->
-    <!--        android:id="@+id/btnLanguageEn"-->
-    <!--        android:layout_width="wrap_content"-->
-    <!--        android:layout_height="wrap_content"-->
-    <!--        android:layout_marginStart="161dp"-->
-    <!--        android:layout_marginTop="21dp"-->
-    <!--        android:layout_marginEnd="122dp"-->
-    <!--        android:layout_marginBottom="2dp"-->
-    <!--        android:text="en language"-->
-    <!--        android:textColor="@color/white"-->
-    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
-    <!--        app:layout_constraintEnd_toEndOf="parent"-->
-    <!--        app:layout_constraintHorizontal_bias="1.0"-->
-    <!--        app:layout_constraintStart_toStartOf="parent"-->
-    <!--        app:layout_constraintTop_toTopOf="parent"-->
-    <!--        app:layout_constraintVertical_bias="0.96" />-->
 
 </ScrollView>

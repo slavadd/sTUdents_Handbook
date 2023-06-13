@@ -1,15 +1,6 @@
-package com.example.timetablenew;
-
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.ActionBarDrawerToggle;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
-import androidx.core.view.GravityCompat;
-import androidx.drawerlayout.widget.DrawerLayout;
-
+package com.example.timetablenew.mainmenu;
 
 import android.content.Context;
-import android.content.Intent;
 import android.os.Bundle;
 import android.util.SparseBooleanArray;
 import android.view.ActionMode;
@@ -20,27 +11,33 @@ import android.view.View;
 import android.widget.AbsListView;
 import android.widget.ListView;
 
-import com.example.timetablenew.adapters.ExamsAdapter;
-import com.example.timetablenew.model.Exam;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.coordinatorlayout.widget.CoordinatorLayout;
+
+import com.example.timetablenew.R;
+import com.example.timetablenew.adapters.TeachersAdapter;
+import com.example.timetablenew.model.Teacher;
 import com.example.timetablenew.utils.AlertDialogsHelper;
 import com.example.timetablenew.utils.DbHelper;
-import com.google.android.material.navigation.NavigationView;
 
 import java.util.ArrayList;
 import java.util.Objects;
 
-public class ExamsActivity extends AppCompatActivity {
+
+public class TeachersActivity extends AppCompatActivity {
 
     private Context context = this;
     private ListView listView;
-    private ExamsAdapter adapter;
     private DbHelper db;
+    private TeachersAdapter adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_exams);
-        Objects.requireNonNull(getSupportActionBar()).setTitle(R.string.exams);
+        setContentView(R.layout.activity_teachers);
+
+        Objects.requireNonNull(getSupportActionBar()).setTitle(R.string.teachers);
+
         initAll();
     }
 
@@ -52,12 +49,13 @@ public class ExamsActivity extends AppCompatActivity {
 
     private void setupAdapter() {
         db = new DbHelper(context);
-        listView = findViewById(R.id.examslist);
-        adapter = new ExamsAdapter(ExamsActivity.this, listView, R.layout.listview_exams_adapter, db.getExam());
+        listView = findViewById(R.id.teacherlist);
+        adapter = new TeachersAdapter(TeachersActivity.this, listView, R.layout.listview_teachers_adapter, db.getTeacher());
         listView.setAdapter(adapter);
     }
 
     private void setupListViewMultiSelect() {
+        final CoordinatorLayout coordinatorLayout = findViewById(R.id.coordinatorTeachers);
         listView.setChoiceMode(ListView.CHOICE_MODE_MULTIPLE_MODAL);
         listView.setMultiChoiceModeListener(new AbsListView.MultiChoiceModeListener() {
             @Override
@@ -70,9 +68,7 @@ public class ExamsActivity extends AppCompatActivity {
             @Override
             public boolean onCreateActionMode(ActionMode mode, Menu menu) {
                 MenuInflater menuInflater = mode.getMenuInflater();
-                //TODO SEE THE DIFFERENCE
                 menuInflater.inflate(R.menu.toolbar_action_mode, menu);
-
                 return true;
             }
 
@@ -85,17 +81,17 @@ public class ExamsActivity extends AppCompatActivity {
             public boolean onActionItemClicked(final ActionMode mode, MenuItem item) {
                 switch (item.getItemId()) {
                     case R.id.action_delete:
-                        ArrayList<Exam> removelist = new ArrayList<>();
+                        ArrayList<Teacher> removelist = new ArrayList<>();
                         SparseBooleanArray checkedItems = listView.getCheckedItemPositions();
                         for (int i = 0; i < checkedItems.size(); i++) {
                             int key = checkedItems.keyAt(i);
                             if (checkedItems.get(key)) {
-                                db.deleteExamById(adapter.getItem(key));
-                                removelist.add(adapter.getExamList().get(key));
+                                db.deleteTeacherById(adapter.getItem(key));
+                                removelist.add(adapter.getTeacherList().get(key));
                             }
                         }
-                        adapter.getExamList().removeAll(removelist);
-                        db.updateExam(adapter.getExam());
+                        adapter.getTeacherList().removeAll(removelist);
+                        db.updateTeacher(adapter.getTeacher());
                         adapter.notifyDataSetChanged();
                         mode.finish();
                         return true;
@@ -112,24 +108,7 @@ public class ExamsActivity extends AppCompatActivity {
     }
 
     private void setupCustomDialog() {
-        final View alertLayout = getLayoutInflater().inflate(R.layout.dialog_add_exam, null);
-        AlertDialogsHelper.getAddExamDialog(ExamsActivity.this, alertLayout, adapter);
+        final View alertLayout = getLayoutInflater().inflate(R.layout.dialog_add_teacher, null);
+        AlertDialogsHelper.getAddTeacherDialog(TeachersActivity.this, alertLayout, adapter);
     }
-
-//    @Override
-//    public boolean onCreateOptionsMenu(Menu menu) {
-//        getMenuInflater().inflate(R.menu.main, menu);
-//        return true;
-//    }
-
-//    @Override
-//    public void onBackPressed() {
-//        DrawerLayout drawer = findViewById(R.id.drawer_layout);
-//        if (drawer.isDrawerOpen(GravityCompat.START)) {
-//            drawer.closeDrawer(GravityCompat.START);
-//        } else {
-//            super.onBackPressed();
-//        }
-//    }
-
 }

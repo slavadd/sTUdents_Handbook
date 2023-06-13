@@ -12,7 +12,6 @@ public class SemesterPdfActivity extends AppCompatActivity {
     WebView sessionHtmlView;
     static String changeUrl = "";
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,7 +26,6 @@ public class SemesterPdfActivity extends AppCompatActivity {
 
         sessionHtmlView.loadUrl(getChangeUrl());
     }
-
 
     public static String getChangeUrl() {
         return changeUrl;

@@ -16,6 +16,10 @@
 <!--        <item name="android:statusBarColor">#D569C9F4</item>-->
 <!--        <item name="android:statusBarColor">@android:color/transparent</item>-->
         <!-- Customize your theme here. -->
+
+        <item name="android:windowDisablePreview">true</item>
+<!--        <item name="android:windowBackground">@android:color/transparent</item>-->
+
     </style>
 
     <color name="cardview_border">#2196F3</color>
@@ -26,6 +30,8 @@
     <color name="customDrawableColor">#ffffff</color>
     <color name="customTextColor">#000000</color>
     <color name="colorBackgroundBox">#ffffff</color>
+    <color name="blueTextColor">#2196F3</color>
+    <color name="tableDivider">#00266F</color>
 
     <style name="Theme.TimeTableNew.NoActionBar">
         <item name="windowActionBar">false</item>

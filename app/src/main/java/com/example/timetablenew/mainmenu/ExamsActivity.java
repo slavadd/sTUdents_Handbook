@@ -1,4 +1,7 @@
-package com.example.timetablenew;
+package com.example.timetablenew.mainmenu;
+
+import androidx.appcompat.app.AppCompatActivity;
+
 
 import android.content.Context;
 import android.os.Bundle;
@@ -11,33 +14,27 @@ import android.view.View;
 import android.widget.AbsListView;
 import android.widget.ListView;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
-import androidx.coordinatorlayout.widget.CoordinatorLayout;
-
-import com.example.timetablenew.adapters.TeachersAdapter;
-import com.example.timetablenew.model.Teacher;
+import com.example.timetablenew.R;
+import com.example.timetablenew.adapters.ExamsAdapter;
+import com.example.timetablenew.model.Exam;
 import com.example.timetablenew.utils.AlertDialogsHelper;
 import com.example.timetablenew.utils.DbHelper;
 
 import java.util.ArrayList;
 import java.util.Objects;
 
-
-public class TeachersActivity extends AppCompatActivity {
+public class ExamsActivity extends AppCompatActivity {
 
     private Context context = this;
     private ListView listView;
+    private ExamsAdapter adapter;
     private DbHelper db;
-    private TeachersAdapter adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_teachers);
-
-        Objects.requireNonNull(getSupportActionBar()).setTitle(R.string.teachers);
-
+        setContentView(R.layout.activity_exams);
+        Objects.requireNonNull(getSupportActionBar()).setTitle(R.string.exams);
         initAll();
     }
 
@@ -49,13 +46,12 @@ public class TeachersActivity extends AppCompatActivity {
 
     private void setupAdapter() {
         db = new DbHelper(context);
-        listView = findViewById(R.id.teacherlist);
-        adapter = new TeachersAdapter(TeachersActivity.this, listView, R.layout.listview_teachers_adapter, db.getTeacher());
+        listView = findViewById(R.id.examslist);
+        adapter = new ExamsAdapter(ExamsActivity.this, listView, R.layout.listview_exams_adapter, db.getExam());
         listView.setAdapter(adapter);
     }
 
     private void setupListViewMultiSelect() {
-        final CoordinatorLayout coordinatorLayout = findViewById(R.id.coordinatorTeachers);
         listView.setChoiceMode(ListView.CHOICE_MODE_MULTIPLE_MODAL);
         listView.setMultiChoiceModeListener(new AbsListView.MultiChoiceModeListener() {
             @Override
@@ -68,7 +64,9 @@ public class TeachersActivity extends AppCompatActivity {
             @Override
             public boolean onCreateActionMode(ActionMode mode, Menu menu) {
                 MenuInflater menuInflater = mode.getMenuInflater();
+
                 menuInflater.inflate(R.menu.toolbar_action_mode, menu);
+
                 return true;
             }
 
@@ -81,17 +79,17 @@ public class TeachersActivity extends AppCompatActivity {
             public boolean onActionItemClicked(final ActionMode mode, MenuItem item) {
                 switch (item.getItemId()) {
                     case R.id.action_delete:
-                        ArrayList<Teacher> removelist = new ArrayList<>();
+                        ArrayList<Exam> removelist = new ArrayList<>();
                         SparseBooleanArray checkedItems = listView.getCheckedItemPositions();
                         for (int i = 0; i < checkedItems.size(); i++) {
                             int key = checkedItems.keyAt(i);
                             if (checkedItems.get(key)) {
-                                db.deleteTeacherById(adapter.getItem(key));
-                                removelist.add(adapter.getTeacherList().get(key));
+                                db.deleteExamById(adapter.getItem(key));
+                                removelist.add(adapter.getExamList().get(key));
                             }
                         }
-                        adapter.getTeacherList().removeAll(removelist);
-                        db.updateTeacher(adapter.getTeacher());
+                        adapter.getExamList().removeAll(removelist);
+                        db.updateExam(adapter.getExam());
                         adapter.notifyDataSetChanged();
                         mode.finish();
                         return true;
@@ -108,7 +106,8 @@ public class TeachersActivity extends AppCompatActivity {
     }
 
     private void setupCustomDialog() {
-        final View alertLayout = getLayoutInflater().inflate(R.layout.dialog_add_teacher, null);
-        AlertDialogsHelper.getAddTeacherDialog(TeachersActivity.this, alertLayout, adapter);
+        final View alertLayout = getLayoutInflater().inflate(R.layout.dialog_add_exam, null);
+        AlertDialogsHelper.getAddExamDialog(ExamsActivity.this, alertLayout, adapter);
     }
+
 }

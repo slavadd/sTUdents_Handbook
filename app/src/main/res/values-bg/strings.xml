@@ -138,7 +138,7 @@
 
     <!--Navigation menu options-->
     <string name="cse_moodle">КСИ Мудъл</string>
-    <string name="fcst_moodle">ФКСТ Мудyл</string>
+    <string name="fcst_moodle">ФКСТ Мудъл</string>
     <string name="tu_mail">ТУ Мейл</string>
     <string name="uiss">УИСС</string>
     <string name="etus">ЕТУС</string>
@@ -204,12 +204,17 @@
     <string name="twelfth_block">Единадесети блок</string>
     <string name="thirteenth_block">Тринадесети блок</string>
     <string name="sport_center">Спортен Център</string>
+    <string name="campus_map">Карта на университета</string>
+    <string name="rotate">Завърти</string>
 
     <!--    Setting-->
     <string name="language_set_to_english">Зададен език е английски</string>
     <string name="enable_dark_mode">Активиране на тъмен режим</string>
     <string name="disable_dark_mode">Деактивиране на тъмен режим</string>
     <string name="language_set_to_bulgarian">Зададен език е български</string>
+    <string name="share_your_impressions">Моля, споделете впечатленията си за приложението</string>
+    <string name="give_feedback">Дайте обратна връзка</string>
+    <string name="enabled_notifications">Активирани известия</string>
 
     <!--    Notification-->
     <string name="look_at_daily_plan">Вижте дневния си план</string>
@@ -231,6 +236,20 @@
     <string name="this_is_uiss_site">Това е сайтът за Университетска Информационна Система - Студент</string>
     <string name="welcome_to_tu_mail">Добре дошли в мейла на Технически Университет</string>
     <string name="this_is_tu_mail">Това е сайтът за уеб поща на студенти от Технически Университет</string>
+
+    <!--   Academic calendar-->
+    <string name="academic_calendar">Академичен календар</string>
+    <string name="educational_process">Учебен процес</string>
+    <string name="early_liquidation_session">Годишна ликвидационна сесия за предходната учебна година</string>
+    <string name="winter_semester">Учебни занятия за зимен семестър</string>
+    <string name="christmas_holiday">Коледна ваканция</string>
+    <string name="winter_session">Зимна изпитна сесия</string>
+    <string name="winter_retake_session">Зимна поправителна сесия</string>
+    <string name="summer_semester">Учебни занятия за летен семестър</string>
+    <string name="easter_holiday">Великденска ваканция</string>
+    <string name="summer_session">Лятна изпитна сесия</string>
+    <string name="summer_retake_session">Годишна поправителна сесия</string>
+
 
 
 </resources>

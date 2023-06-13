@@ -9,12 +9,10 @@ import android.content.Intent;
 import android.graphics.BitmapFactory;
 import android.media.RingtoneManager;
 import android.net.Uri;
-import android.os.Build;
 
-import androidx.annotation.RequiresApi;
 import androidx.core.app.NotificationCompat;
 
-import com.example.timetablenew.MainActivity;
+import com.example.timetablenew.mainmenu.MainActivity;
 import com.example.timetablenew.R;
 
 import java.util.Calendar;

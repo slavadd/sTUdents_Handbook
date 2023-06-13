@@ -180,4 +180,9 @@ public class SearchSessionFilesActivity extends AppCompatActivity {
     }
 
 
+    @Override
+    public void onBackPressed() {
+
+    }
+
 }

@@ -48,7 +48,7 @@
                 android:padding="8dp">
 
                 <TextView
-                    android:id="@+id/edit_profile_info"
+                    android:id="@+id/title_edu_process"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
@@ -79,7 +79,7 @@
             android:padding="8dp">
 
             <EditText
-                android:id="@+id/tv_profile_edit_name"
+                android:id="@+id/liquidationString"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"

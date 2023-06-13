@@ -50,6 +50,10 @@
                 android:checkableBehavior="single">
 
                 <item
+                    android:id="@+id/nav_calendar"
+                    android:icon="@drawable/baseline_calendar_month_24"
+                    android:title="@string/academic_calendar" />
+                <item
                     android:id="@+id/nav_semester"
                     android:icon="@drawable/baseline_search_24"
                     android:title="@string/search_for_semester" />

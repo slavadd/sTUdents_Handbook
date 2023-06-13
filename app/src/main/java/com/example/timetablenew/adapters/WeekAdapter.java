@@ -18,7 +18,6 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
 
-import com.example.timetablenew.MainActivity;
 import com.example.timetablenew.R;
 import com.example.timetablenew.model.Week;
 import com.example.timetablenew.utils.AlertDialogsHelper;

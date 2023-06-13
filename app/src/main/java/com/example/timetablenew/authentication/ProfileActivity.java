@@ -94,7 +94,7 @@ public class ProfileActivity extends AppCompatActivity {
     public void getUserData() {
         firebaseUser = mAuth.getCurrentUser();
         String user_id;
-        if(firebaseUser != null) {
+        if (firebaseUser != null) {
             user_id = Objects.requireNonNull(mAuth.getCurrentUser()).getUid();
 
 
@@ -126,9 +126,4 @@ public class ProfileActivity extends AppCompatActivity {
         }
     }
 
-
-//    public void passUserData(){
-//        String user_id = Objects.requireNonNull(mAuth.getCurrentUser()).getUid();
-//        Query checkUserDB = databaseReference.child("Users").child(user_id);
-//    }
 }

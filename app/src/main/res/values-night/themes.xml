@@ -12,6 +12,9 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor">@color/light_pastel_blue</item>
         <!-- Customize your theme here. -->
+
+        <item name="android:windowDisablePreview">true</item>
+<!--        <item name="android:windowBackground">@drawable/black_diagonal_background</item>-->
     </style>
 
     //5B86C6
@@ -23,4 +26,6 @@
     <color name="customDrawableColor">#000000</color>
     <color name="customTextColor">#ffffff</color>
     <color name="colorBackgroundBox">#800B0909</color>
+    <color name="blueTextColor">#ffffff</color>
+    <color name="tableDivider">#888888</color>
 </resources>

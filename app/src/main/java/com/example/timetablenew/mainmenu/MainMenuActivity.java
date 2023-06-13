@@ -1,4 +1,4 @@
-package com.example.timetablenew;
+package com.example.timetablenew.mainmenu;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
@@ -12,19 +12,19 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
-import android.app.AlarmManager;
-import android.app.PendingIntent;
-import android.content.Context;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
+import com.example.timetablenew.R;
+import com.example.timetablenew.options.SettingActivity;
 import com.example.timetablenew.authentication.LoginActivity;
 import com.example.timetablenew.authentication.ProfileActivity;
+import com.example.timetablenew.maps.MapsActivity;
+import com.example.timetablenew.searchfiles.CalendarActivity;
 import com.example.timetablenew.searchfiles.SearchSemesterFilesActivity;
 import com.example.timetablenew.searchfiles.SearchSessionFilesActivity;
 import com.example.timetablenew.webviews.CseMoodleFragment;
@@ -37,7 +37,6 @@ import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
-import java.util.Calendar;
 import java.util.Objects;
 
 public class MainMenuActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
@@ -102,16 +101,6 @@ public class MainMenuActivity extends AppCompatActivity implements NavigationVie
             navMail.setText(userMail);
         }
 
-
-        //startAlarmBroadcastReceiver(MainMenuActivity.this);
-
-//        SharedPreferences preferences = getSharedPreferences(PREFS_NAME, MODE_PRIVATE);
-//        boolean firstStartSport = preferences.getBoolean("firstStartSport",true);
-//
-//        if(firstStartSport){
-//            startAlarmBroadcastReceiver(MainMenuActivity.this);
-//        }
-
         weeklyPlan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -147,7 +136,6 @@ public class MainMenuActivity extends AppCompatActivity implements NavigationVie
 
             }
         });
-
 
         profile.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -185,18 +173,6 @@ public class MainMenuActivity extends AppCompatActivity implements NavigationVie
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
     }
-
-//    @Override
-//    public boolean onOptionsItemSelected(MenuItem item) {
-//        switch (item.getItemId()) {
-//            case R.id.action_settings:
-//                Intent settings = new Intent(MainMenuActivity.this, SettingActivity.class);
-//                startActivity(settings);
-//                return true;
-//            default:
-//                return super.onOptionsItemSelected(item);
-//        }
-//    }
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
@@ -262,6 +238,12 @@ public class MainMenuActivity extends AppCompatActivity implements NavigationVie
                 startActivity(semester);
                 break;
 
+            case R.id.nav_calendar:
+                Intent calendar = new Intent(MainMenuActivity.this, CalendarActivity.class);
+                navigationView.setCheckedItem(R.id.nav_calendar);
+                startActivity(calendar);
+                break;
+
 
             default:
                 DrawerLayout drawer = findViewById(R.id.drawer_layout);
@@ -299,11 +281,6 @@ public class MainMenuActivity extends AppCompatActivity implements NavigationVie
             fragmentTransaction.commit();
 
         }
-
-
-        //Fragment f = getFragmentManager().findFragmentByTag("first");
-//        if(f!=null) fragmentTransac.remove(f);
-//        fragmentTransac.commit();
     }
 
 
@@ -315,13 +292,6 @@ public class MainMenuActivity extends AppCompatActivity implements NavigationVie
     @Override
     public void onContentChanged() {
         super.onContentChanged();
-
-        //        if(firebaseUser == null){
-        //            Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
-        //            startActivity(intent);
-        //            finish();
-        //        }
-
 
     }
 }
