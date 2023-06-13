@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background_transparent"
     android:gravity="center"
     android:orientation="vertical"
     android:padding="10dp"
-    android:background="@drawable/background_transparent"
     tools:context=".authentication.LoginActivity">
 
     <LinearLayout
@@ -21,7 +21,6 @@
         android:background="@drawable/white_background"
         android:orientation="vertical"
         android:padding="10dp">
-
 
         <TextView
             android:layout_width="match_parent"
@@ -179,4 +178,5 @@
         </LinearLayout>
 
     </LinearLayout>
+
 </LinearLayout>

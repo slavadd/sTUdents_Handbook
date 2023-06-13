@@ -27,18 +27,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <!--    <TextView-->
-        <!--        android:id="@+id/facultyName"-->
-        <!--        android:layout_width="wrap_content"-->
-        <!--        android:layout_height="wrap_content"-->
-        <!--        android:text="@string/fkst_meaning"-->
-        <!--        app:layout_constraintBottom_toBottomOf="parent"-->
-        <!--        app:layout_constraintEnd_toEndOf="parent"-->
-        <!--        app:layout_constraintStart_toStartOf="parent"-->
-        <!--        app:layout_constraintTop_toTopOf="parent"-->
-        <!--        app:layout_constraintVertical_bias="0.082" />-->
-
-
         <LinearLayout
             android:id="@+id/liner_layout"
             android:layout_width="match_parent"
@@ -62,34 +50,15 @@
                 android:orientation="vertical"
                 android:padding="8dp">
 
-<!--                <LinearLayout-->
-<!--                    android:layout_width="0dp"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    >-->
-
-                    <TextView
-                        android:id="@+id/weeklyPlan"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:text="@string/weekly_schedule"
-                        android:textColor="@color/colorPrimary"
-                        android:textSize="18sp"
-                        android:textStyle="bold" />
-
-
-                    <!--            <TextView-->
-                    <!--                android:id="@+id/weeklyPlan"-->
-                    <!--                android:layout_width="wrap_content"-->
-                    <!--                android:layout_height="wrap_content"-->
-                    <!--                android:text="@string/weekly_schedule"-->
-                    <!--                app:layout_constraintBottom_toBottomOf="parent"-->
-                    <!--                app:layout_constraintEnd_toEndOf="parent"-->
-                    <!--                app:layout_constraintStart_toStartOf="parent"-->
-                    <!--                app:layout_constraintTop_toTopOf="parent"-->
-                    <!--                app:layout_constraintVertical_bias="0.151" />-->
-
-<!--                </LinearLayout>-->
+                <TextView
+                    android:id="@+id/weeklyPlan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/weekly_schedule"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
 
             </LinearLayout>
 
@@ -133,33 +102,6 @@
                     android:textSize="18sp" />
             </LinearLayout>
 
-
-            <!--        <TextView-->
-            <!--            android:id="@+id/stringSpecialty"-->
-            <!--            android:layout_width="wrap_content"-->
-            <!--            android:layout_height="wrap_content"-->
-            <!--            android:text="@string/choose_specialty"-->
-            <!--            app:layout_constraintBottom_toBottomOf="parent"-->
-            <!--            app:layout_constraintEnd_toEndOf="parent"-->
-            <!--            app:layout_constraintHorizontal_bias="0.058"-->
-            <!--            app:layout_constraintStart_toStartOf="parent"-->
-            <!--            app:layout_constraintTop_toTopOf="parent"-->
-            <!--            app:layout_constraintVertical_bias="0.24" />-->
-
-            <!--        <Spinner-->
-            <!--            android:id="@+id/spinnerSpecialty"-->
-            <!--            android:layout_width="160dp"-->
-            <!--            android:layout_height="wrap_content"-->
-            <!--            android:background="@drawable/spinner_background"-->
-            <!--            android:popupBackground="@drawable/white_box_text_input"-->
-            <!--            android:spinnerMode="dropdown"-->
-            <!--            app:layout_constraintBottom_toBottomOf="parent"-->
-            <!--            app:layout_constraintEnd_toEndOf="parent"-->
-            <!--            app:layout_constraintHorizontal_bias="0.936"-->
-            <!--            app:layout_constraintStart_toStartOf="parent"-->
-            <!--            app:layout_constraintTop_toTopOf="parent"-->
-            <!--            app:layout_constraintVertical_bias="0.244" />-->
-
             <androidx.appcompat.widget.AppCompatImageView
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
@@ -197,34 +139,7 @@
                     android:textAlignment="viewStart"
                     android:textSize="18sp" />
 
-
             </LinearLayout>
-
-            <!--        <TextView-->
-            <!--            android:id="@+id/stringCourse"-->
-            <!--            android:layout_width="wrap_content"-->
-            <!--            android:layout_height="wrap_content"-->
-            <!--            android:text="@string/choose_course"-->
-            <!--            app:layout_constraintBottom_toBottomOf="parent"-->
-            <!--            app:layout_constraintEnd_toEndOf="parent"-->
-            <!--            app:layout_constraintHorizontal_bias="0.072"-->
-            <!--            app:layout_constraintStart_toStartOf="parent"-->
-            <!--            app:layout_constraintTop_toTopOf="parent"-->
-            <!--            app:layout_constraintVertical_bias="0.335" />-->
-
-            <!--        <Spinner-->
-            <!--            android:id="@+id/spinnerCourse"-->
-            <!--            android:layout_width="160dp"-->
-            <!--            android:layout_height="wrap_content"-->
-            <!--            android:background="@drawable/spinner_background"-->
-            <!--            android:popupBackground="@color/colorSpinner"-->
-            <!--            android:spinnerMode="dropdown"-->
-            <!--            app:layout_constraintBottom_toBottomOf="parent"-->
-            <!--            app:layout_constraintEnd_toEndOf="parent"-->
-            <!--            app:layout_constraintHorizontal_bias="0.936"-->
-            <!--            app:layout_constraintStart_toStartOf="parent"-->
-            <!--            app:layout_constraintTop_toTopOf="parent"-->
-            <!--            app:layout_constraintVertical_bias="0.341" />-->
 
             <androidx.appcompat.widget.AppCompatImageView
                 android:layout_width="match_parent"
@@ -268,73 +183,6 @@
 
             </LinearLayout>
 
-
-            <!--        <Spinner-->
-            <!--            android:id="@+id/spinnerStream"-->
-            <!--            android:layout_width="160dp"-->
-            <!--            android:layout_height="wrap_content"-->
-            <!--            android:background="@drawable/spinner_background"-->
-            <!--            android:popupBackground="@color/colorSpinner"-->
-            <!--            android:spinnerMode="dropdown"-->
-            <!--            app:layout_constraintBottom_toBottomOf="parent"-->
-            <!--            app:layout_constraintEnd_toEndOf="parent"-->
-            <!--            app:layout_constraintHorizontal_bias="0.936"-->
-            <!--            app:layout_constraintStart_toStartOf="parent"-->
-            <!--            app:layout_constraintTop_toTopOf="parent"-->
-            <!--            app:layout_constraintVertical_bias="0.432" />-->
-
-            <!--       -->
-
-            <!--        <TextView-->
-            <!--            android:id="@+id/stringStream"-->
-            <!--            android:layout_width="wrap_content"-->
-            <!--            android:layout_height="wrap_content"-->
-            <!--            android:text="@string/choose_stream"-->
-            <!--            app:layout_constraintBottom_toBottomOf="parent"-->
-            <!--            app:layout_constraintEnd_toEndOf="parent"-->
-            <!--            app:layout_constraintHorizontal_bias="0.074"-->
-            <!--            app:layout_constraintStart_toStartOf="parent"-->
-            <!--            app:layout_constraintTop_toTopOf="parent"-->
-            <!--            app:layout_constraintVertical_bias="0.424" />-->
-
-
-            <!--        <TextView-->
-            <!--            android:id="@+id/programInstructions"-->
-            <!--            android:layout_width="376dp"-->
-            <!--            android:layout_height="wrap_content"-->
-            <!--            android:text="@string/guide_weekly_schedule"-->
-            <!--            android:textStyle="bold"-->
-            <!--            app:layout_constraintBottom_toBottomOf="parent"-->
-            <!--            app:layout_constraintEnd_toEndOf="parent"-->
-            <!--            app:layout_constraintHorizontal_bias="0.457"-->
-            <!--            app:layout_constraintStart_toStartOf="parent"-->
-            <!--            app:layout_constraintTop_toTopOf="parent"-->
-            <!--            app:layout_constraintVertical_bias="0.717" />-->
-
-            <!--        <TextView-->
-            <!--            android:id="@+id/programTextLegend"-->
-            <!--            android:layout_width="376dp"-->
-            <!--            android:layout_height="56dp"-->
-            <!--            android:text="text info"-->
-            <!--            app:layout_constraintBottom_toBottomOf="parent"-->
-            <!--            app:layout_constraintEnd_toEndOf="parent"-->
-            <!--            app:layout_constraintHorizontal_bias="0.457"-->
-            <!--            app:layout_constraintStart_toStartOf="parent"-->
-            <!--            app:layout_constraintTop_toTopOf="parent"-->
-            <!--            app:layout_constraintVertical_bias="0.784" />-->
-
-            <!--        <TextView-->
-            <!--            android:id="@+id/programTextLines"-->
-            <!--            android:layout_width="376dp"-->
-            <!--            android:layout_height="56dp"-->
-            <!--            android:text="lines info"-->
-            <!--            app:layout_constraintBottom_toBottomOf="parent"-->
-            <!--            app:layout_constraintEnd_toEndOf="parent"-->
-            <!--            app:layout_constraintHorizontal_bias="0.457"-->
-            <!--            app:layout_constraintStart_toStartOf="parent"-->
-            <!--            app:layout_constraintTop_toTopOf="parent"-->
-            <!--            app:layout_constraintVertical_bias="0.887" />-->
-
         </LinearLayout>
 
         <Button
@@ -377,77 +225,41 @@
                 android:orientation="vertical"
                 android:padding="8dp">
 
-<!--                <LinearLayout-->
-<!--                    android:layout_width="0dp"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_margin="10dp"-->
-<!--                    android:layout_weight="1"-->
-<!--                    android:elevation="5dp"-->
-<!--                    android:orientation="vertical"-->
-<!--                    android:padding="8dp">-->
+                <TextView
+                    android:id="@+id/programInstructions"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="center"
+                    android:text="@string/guide_weekly_schedule"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
 
-                    <TextView
-                        android:id="@+id/programInstructions"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="20dp"
-                        android:gravity="center"
-                        android:text="@string/guide_weekly_schedule"
-                        android:textColor="@color/colorPrimary"
-                        android:textSize="18sp"
-                        android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/programTextLegend"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="start"
+                    android:text="text"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp"
+                    android:textStyle="normal" />
 
-                    <TextView
-                        android:id="@+id/programTextLegend"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="10dp"
-                        android:gravity="start"
-                        android:text="text"
-                        android:textColor="@color/colorPrimary"
-                        android:textSize="16sp"
-                        android:textStyle="normal" />
-
-                    <TextView
-                        android:id="@+id/programTextLines"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:gravity="start"
-                        android:text="text"
-                        android:textColor="@color/colorPrimary"
-                        android:textSize="16sp"
-                        android:textStyle="normal" />
-
-
-                    <!--            <TextView-->
-                    <!--                android:id="@+id/weeklyPlan"-->
-                    <!--                android:layout_width="wrap_content"-->
-                    <!--                android:layout_height="wrap_content"-->
-                    <!--                android:text="@string/weekly_schedule"-->
-                    <!--                app:layout_constraintBottom_toBottomOf="parent"-->
-                    <!--                app:layout_constraintEnd_toEndOf="parent"-->
-                    <!--                app:layout_constraintStart_toStartOf="parent"-->
-                    <!--                app:layout_constraintTop_toTopOf="parent"-->
-                    <!--                app:layout_constraintVertical_bias="0.151" />-->
-
-<!--                </LinearLayout>-->
+                <TextView
+                    android:id="@+id/programTextLines"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="text"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp"
+                    android:textStyle="normal" />
 
             </LinearLayout>
 
         </LinearLayout>
-
-        <!--    <Button-->
-        <!--        android:id="@+id/buttonSearch"-->
-        <!--        android:layout_width="wrap_content"-->
-        <!--        android:layout_height="wrap_content"-->
-        <!--        android:backgroundTint="@color/colorSpinner"-->
-        <!--        android:text="Търси"-->
-        <!--        app:layout_constraintBottom_toBottomOf="parent"-->
-        <!--        app:layout_constraintEnd_toEndOf="parent"-->
-        <!--        app:layout_constraintHorizontal_bias="0.498"-->
-        <!--        app:layout_constraintStart_toStartOf="parent"-->
-        <!--        app:layout_constraintTop_toTopOf="parent"-->
-        <!--        app:layout_constraintVertical_bias="0.953" />-->
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

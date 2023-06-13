@@ -42,12 +42,6 @@
         android:gravity="center_vertical"
         android:orientation="horizontal">
 
-        <!--        <TextView-->
-        <!--            android:layout_width="0dp"-->
-        <!--            android:layout_height="wrap_content"-->
-        <!--            android:layout_weight=".3"-->
-        <!--            android:text="@string/subject_dialog"-->
-        <!--            android:textColor="@android:color/black" />-->
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -93,13 +87,6 @@
         android:gravity="center_vertical"
         android:orientation="horizontal">
 
-        <!--        <TextView-->
-        <!--            android:layout_width="0dp"-->
-        <!--            android:layout_height="wrap_content"-->
-        <!--            android:layout_weight=".3"-->
-        <!--            android:text="@string/teacher_dialog"-->
-        <!--            android:textColor="@android:color/black" />-->
-
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -144,13 +131,6 @@
         android:gravity="center_vertical"
         android:orientation="horizontal">
 
-        <!--        <TextView-->
-        <!--            android:layout_width="0dp"-->
-        <!--            android:layout_height="wrap_content"-->
-        <!--            android:layout_weight=".3"-->
-        <!--            android:text="@string/room_dialog"-->
-        <!--            android:textColor="@android:color/black" />-->
-
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -194,15 +174,6 @@
         android:layout_height="wrap_content"
         android:gravity="center_vertical"
         android:orientation="horizontal">
-
-        <!--        <TextView-->
-        <!--            android:layout_width="0dp"-->
-        <!--            android:layout_height="wrap_content"-->
-        <!--            android:layout_weight=".3"-->
-        <!--            android:text="@string/subject_type"-->
-        <!--            android:textAlignment="textStart"-->
-        <!--            android:textColor="@android:color/black"-->
-        <!--            android:textSize="14sp" />-->
 
         <TextView
             android:layout_width="0dp"
@@ -323,28 +294,6 @@
         android:alpha="1"
         android:background="@color/colorPrimary"
         android:padding="8dp" />
-
-<!--    <LinearLayout-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:gravity="center_vertical"-->
-<!--        android:orientation="horizontal">-->
-
-<!--        &lt;!&ndash;        <Button&ndash;&gt;-->
-<!--        &lt;!&ndash;            android:id="@+id/select_color"&ndash;&gt;-->
-<!--        &lt;!&ndash;            android:layout_width="match_parent"&ndash;&gt;-->
-<!--        &lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;-->
-<!--        &lt;!&ndash;            android:layout_marginTop="5dp"&ndash;&gt;-->
-<!--        &lt;!&ndash;            android:layout_marginBottom="5dp"&ndash;&gt;-->
-<!--        &lt;!&ndash;            android:layout_marginRight="50dp"&ndash;&gt;-->
-<!--        &lt;!&ndash;            android:layout_marginLeft="50dp"&ndash;&gt;-->
-<!--        &lt;!&ndash;            android:background="@color/white"&ndash;&gt;-->
-<!--        &lt;!&ndash;            android:text="@string/select_color"&ndash;&gt;-->
-<!--        &lt;!&ndash;            android:textAlignment="center"&ndash;&gt;-->
-<!--        &lt;!&ndash;            android:textAllCaps="true"&ndash;&gt;-->
-<!--        &lt;!&ndash;            android:textSize="18sp"&ndash;&gt;-->
-<!--        &lt;!&ndash;            android:textStyle="bold" />&ndash;&gt;-->
-<!--    </LinearLayout>-->
 
     <LinearLayout
         android:layout_width="match_parent"

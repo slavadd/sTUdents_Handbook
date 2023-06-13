@@ -8,27 +8,27 @@
     tools:context=".authentication.ProfileActivity">
 
     <TextView
+        android:id="@+id/title_acc_settings"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/title_acc_settings"
+        android:layout_marginTop="40dp"
         android:text="@string/account_settings"
         android:textColor="@color/colorPrimary"
         android:textSize="22sp"
-        android:layout_marginTop="40dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
+        android:id="@+id/liner_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/liner_layout"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/white_background"
         android:orientation="vertical"
         android:padding="10dp"
-        android:background="@drawable/white_background"
-        android:layout_marginStart="24dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginTop="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/title_acc_settings">
@@ -44,17 +44,17 @@
                 android:layout_margin="10dp"
                 android:layout_weight="1"
                 android:elevation="5dp"
-                android:padding="8dp"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:padding="8dp">
 
                 <TextView
+                    android:id="@+id/title_profile_info"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/title_profile_info"
+                    android:gravity="center"
                     android:text="@string/profile_information"
                     android:textColor="@color/colorPrimary"
                     android:textSize="18sp"
-                    android:gravity="center"
                     android:textStyle="bold" />
 
             </LinearLayout>
@@ -66,116 +66,116 @@
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:layout_margin="10dp"
-            android:padding="8dp"
             android:alpha="1"
-            android:background="@color/colorPrimary"/>
+            android:background="@color/colorPrimary"
+            android:padding="8dp" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:padding="8dp"
             android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
             android:layout_marginRight="10dp"
             android:layout_marginBottom="10dp"
-            android:layout_marginTop="20dp"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:padding="8dp">
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:id="@+id/tv_full_name"
-                android:layout_weight="1"
-                android:text="@string/full_name"
-                android:textStyle="bold"
-                android:textColor="@color/colorPrimary"
-                android:textSize="18sp"/>
-
-            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/profile_edit_name"
-                android:text="@string/full_name"
                 android:layout_weight="1"
+                android:text="@string/full_name"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/profile_edit_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/full_name"
                 android:textAlignment="viewEnd"
                 android:textColor="@color/grey"
-                android:textSize="18sp"/>
+                android:textSize="18sp" />
         </LinearLayout>
-        
-        <androidx.appcompat.widget.AppCompatImageView
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:layout_margin="10dp"
-            android:padding="8dp"
-            android:alpha="0.5"
-            android:background="@color/colorPrimary"/>
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_margin="10dp"
-        android:padding="8dp"
-        android:orientation="horizontal">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/tv_specialty"
-            android:layout_weight="1"
-            android:text="@string/specialty"
-            android:textStyle="bold"
-            android:textColor="@color/colorPrimary"
-            android:textSize="18sp"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/profile_edit_specialty"
-            android:text="@string/specialty"
-            android:layout_weight="1"
-            android:textAlignment="viewEnd"
-            android:textColor="@color/grey"
-            android:textSize="18sp"/>
-
-    </LinearLayout>
 
         <androidx.appcompat.widget.AppCompatImageView
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:layout_margin="10dp"
-            android:padding="8dp"
             android:alpha="0.5"
-            android:background="@color/colorPrimary"/>
+            android:background="@color/colorPrimary"
+            android:padding="8dp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/tv_specialty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/specialty"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/profile_edit_specialty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/specialty"
+                android:textAlignment="viewEnd"
+                android:textColor="@color/grey"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="10dp"
+            android:alpha="0.5"
+            android:background="@color/colorPrimary"
+            android:padding="8dp" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
             android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
             android:layout_marginBottom="20dp"
-            android:padding="8dp"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:padding="8dp">
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:id="@+id/tv_email"
-                android:layout_weight="1"
-                android:text="@string/email"
-                android:textStyle="bold"
-                android:textColor="@color/colorPrimary"
-                android:textSize="18sp"/>
-
-            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/profile_edit_email"
-                android:text="@string/email"
                 android:layout_weight="1"
+                android:text="@string/email"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/profile_edit_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/email"
                 android:textAlignment="viewEnd"
                 android:textColor="@color/grey"
-                android:textSize="18sp"/>
+                android:textSize="18sp" />
 
         </LinearLayout>
 
@@ -189,35 +189,35 @@
     </LinearLayout>
 
     <Button
+        android:id="@+id/btn_edit_profile"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/btn_edit_profile"
-        android:text="@string/edit_profile"
-        android:layout_marginEnd="20dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="40dp"
-        android:textSize="18sp"
-        android:padding="8dp"
-        android:textAllCaps="true"
+        android:layout_marginEnd="20dp"
         android:background="@drawable/button_background"
-        app:layout_constraintStart_toStartOf="@id/liner_layout"
+        android:padding="8dp"
+        android:text="@string/edit_profile"
+        android:textAllCaps="true"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="@id/liner_layout"
-        app:layout_constraintTop_toBottomOf="@id/liner_layout"/>
+        app:layout_constraintStart_toStartOf="@id/liner_layout"
+        app:layout_constraintTop_toBottomOf="@id/liner_layout" />
+
     <Button
+        android:id="@+id/btn_logout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/btn_logout"
-        android:text="@string/logout"
-        android:layout_marginEnd="20dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="30dp"
-        android:textSize="18sp"
-        android:padding="8dp"
-        android:textAllCaps="true"
+        android:layout_marginEnd="20dp"
         android:background="@drawable/button_background"
-        app:layout_constraintStart_toStartOf="@id/liner_layout"
+        android:padding="8dp"
+        android:text="@string/logout"
+        android:textAllCaps="true"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="@id/liner_layout"
-        app:layout_constraintTop_toBottomOf="@id/btn_edit_profile"/>
-
+        app:layout_constraintStart_toStartOf="@id/liner_layout"
+        app:layout_constraintTop_toBottomOf="@id/btn_edit_profile" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

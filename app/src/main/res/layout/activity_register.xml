@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background_transparent"
     android:gravity="center"
     android:orientation="vertical"
     android:padding="10dp"
-    android:background="@drawable/background_transparent"
     tools:context=".authentication.RegisterActivity">
 
     <LinearLayout
@@ -67,7 +67,7 @@
                     android:layout_height="wrap_content"
                     android:background="@drawable/white_box_text_input"
                     android:hint="@string/full_name"
-                    android:textColor="@color/loginTextcolor"/>
+                    android:textColor="@color/loginTextcolor" />
             </com.google.android.material.textfield.TextInputLayout>
 
         </LinearLayout>
