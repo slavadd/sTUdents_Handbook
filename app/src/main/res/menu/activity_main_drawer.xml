@@ -13,36 +13,6 @@
 
     </group>
 
-    <!--    <item android:title="@string/personalize">-->
-    <!--        <menu>-->
-    <!--            <group-->
-    <!--                android:id="@+id/menu_middle"-->
-    <!--                android:checkableBehavior="single">-->
-
-    <!--                <item-->
-    <!--                    android:id="@+id/nav_timetable"-->
-    <!--                    android:icon="@drawable/baseline_calendar_month_24"-->
-    <!--                    android:title="@string/timetable" />-->
-    <!--                <item-->
-    <!--                    android:id="@+id/nav_exams"-->
-    <!--                    android:icon="@drawable/baseline_school_24"-->
-    <!--                    android:title="@string/exams" />-->
-
-    <!--                <item-->
-    <!--                    android:id="@+id/nav_teachers"-->
-    <!--                    android:icon="@drawable/baseline_person_pin_24"-->
-    <!--                    android:title="@string/teachers" />-->
-
-    <!--                <item-->
-    <!--                    android:id="@+id/nav_notes"-->
-    <!--                    android:icon="@drawable/round_note_24"-->
-    <!--                    android:title="@string/notes" />-->
-
-    <!--            </group>-->
-    <!--        </menu>-->
-    <!--    </item>-->
-
-
     <item android:title="@string/search">
         <menu>
             <group

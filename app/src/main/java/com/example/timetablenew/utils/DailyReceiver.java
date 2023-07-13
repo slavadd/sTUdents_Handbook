@@ -9,6 +9,7 @@ import android.content.Intent;
 import android.graphics.BitmapFactory;
 import android.media.RingtoneManager;
 import android.net.Uri;
+import android.os.Build;
 
 import androidx.core.app.NotificationCompat;
 
@@ -35,8 +36,18 @@ public class DailyReceiver extends BroadcastReceiver {
 
         Intent notificationIntent = new Intent(context, MainActivity.class);
         notificationIntent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-        PendingIntent pendingIntent = PendingIntent.getActivity(context, 0,
-                notificationIntent, PendingIntent.FLAG_UPDATE_CURRENT);
+        PendingIntent pendingIntent;
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
+            pendingIntent = PendingIntent.getActivity(context.getApplicationContext(),
+                    0, notificationIntent, PendingIntent.FLAG_UPDATE_CURRENT | PendingIntent.FLAG_MUTABLE);
+
+        }else {
+            pendingIntent = PendingIntent.getActivity(context.getApplicationContext(),
+                    0, notificationIntent, PendingIntent.FLAG_UPDATE_CURRENT);
+
+        }
+//        pendingIntent = PendingIntent.getActivity(context, 0,
+//                notificationIntent, PendingIntent.FLAG_UPDATE_CURRENT);
 
         Uri alarmSound = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
 

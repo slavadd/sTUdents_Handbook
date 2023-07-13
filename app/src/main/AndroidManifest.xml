@@ -87,9 +87,6 @@
             android:parentActivityName=".mainmenu.MainMenuActivity"
             android:theme="@style/Theme.TimeTableNew" />
         <activity
-            android:name=".TestActivity"
-            android:exported="false" />
-        <activity
             android:name=".mainmenu.MainMenuActivity"
             android:exported="true"/>
         <activity
@@ -111,20 +108,13 @@
             android:exported="true"
             android:launchMode="singleInstance"
             android:noHistory="true">
-
-            <!-- <intent-filter> -->
-            <!-- <action android:name="android.intent.action.MAIN" /> -->
-
-
-            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
-            <!-- </intent-filter> -->
         </activity>
         <activity
             android:name=".mainmenu.ExamsActivity"
             android:exported="false"
             android:label="@string/exams"
             android:parentActivityName=".mainmenu.MainMenuActivity"
-            android:theme="@style/Theme.TimeTableNew" /> <!-- android:parentActivityName=".MainActivity" -->
+            android:theme="@style/Theme.TimeTableNew" />
         <activity
             android:name=".options.SettingsActivity"
             android:exported="false"
@@ -139,7 +129,6 @@
 
             <!-- <intent-filter> -->
             <!-- <action android:name="android.intent.action.MAIN" /> -->
-
 
             <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
             <!-- </intent-filter> -->

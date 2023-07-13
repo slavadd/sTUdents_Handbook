@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.content.res.Resources;
+import android.os.Build;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.view.View;
@@ -147,8 +148,15 @@ public class MainActivity extends AppCompatActivity  {
 
         Intent myIntent = new Intent(this, DailyReceiver.class);
         int ALARM1_ID = 10000;
-        PendingIntent pendingIntent = PendingIntent.getBroadcast(
-                this, ALARM1_ID, myIntent, PendingIntent.FLAG_UPDATE_CURRENT);
+        PendingIntent pendingIntent;
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
+             pendingIntent = PendingIntent.getBroadcast(
+                    this, ALARM1_ID, myIntent, PendingIntent.FLAG_UPDATE_CURRENT | PendingIntent.FLAG_MUTABLE);
+        } else {
+             pendingIntent = PendingIntent.getBroadcast(
+                    this, ALARM1_ID, myIntent, PendingIntent.FLAG_UPDATE_CURRENT);
+
+        }
         AlarmManager alarmManager = (AlarmManager) this.getSystemService(ALARM_SERVICE);
         if (alarmManager != null) {
             alarmManager.setRepeating(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(), AlarmManager.INTERVAL_DAY, pendingIntent);
